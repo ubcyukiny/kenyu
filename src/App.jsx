@@ -1,35 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import linkedinLogo from '/assets/images/icon-linkedin.svg';
+import githubLogo from '/assets/images/icon-github.svg';
+import kenPFP from '/assets/images/kenPFP.jpeg';
+import Navbar from './components/Navbar';
+import ParticlesComponent from './components/particles';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className='bg-black flex flex-col justify-center'>
+      <Navbar />
+      <main className='text-white min-h-screen font-spaceGrotesk'>
+        <section className='flex flex-col justify-center h-[600px] relative p-5 '>
+          <ParticlesComponent id='particles' />
+          <div className='z-10 flex justify-center pb-4'>
+            <img
+              src={kenPFP}
+              alt='Ken PFP'
+              className='z-10 rounded-full size-16'
+            />
+          </div>
+          <p className='z-10'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga beatae
+            laudantium quasi excepturi fugiat minima cupiditate? Corrupti,
+            culpa, qui consequatur quam accusantium voluptatem omnis, rerum ex
+            veniam quaerat adipisci soluta.
+          </p>
+        </section>
+
+        <section className=''>projects</section>
+        <section>skills</section>
+        <section>education</section>
+        <section>contact form</section>
+      </main>
+    </div>
+  );
 }
 
-export default App
+export default App;
