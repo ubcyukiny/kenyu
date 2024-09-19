@@ -16,7 +16,7 @@ const Skills = () => {
   return (
     <section className='flex flex-col gap-8 p-8'>
       <h2>My Skills</h2>
-      <div className='grid grid-cols-3 grid-rows-4'>
+      <div className='grid grid-cols-3 grid-rows-4 gap-2'>
         <div className='skill-item'>
           <img src={htmlIcon} className='skill-icon' />
           <p>HTML</p>
