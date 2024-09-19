@@ -2,7 +2,7 @@ import linkedinLogo from '/assets/images/icon-linkedin.svg';
 import githubLogo from '/assets/images/icon-github.svg';
 import kenPFP from '/assets/images/kenPFP.jpeg';
 import ParticlesComponent from './particles';
-import './Home.css';
+import Typewriter from 'typewriter-effect';
 
 const Home = () => {
   return (
@@ -11,8 +11,21 @@ const Home = () => {
       <div className='z-10 flex justify-center pb-4'>
         <img src={kenPFP} alt='Ken PFP' className='z-10 rounded-full size-16' />
       </div>
-      <span className=' z-10 first-text'>Hello, I am</span>
-      <span className='z-10 caret text-cyan-300'>Ken Yu</span>
+      <div className='text-xl z-10 text-cyan-300'>
+        <span className='text-white'>Hello, I am</span>
+        <Typewriter
+          options={{
+            strings: [
+              'Ken Yu',
+              'a software developer',
+              'a proud cat owner',
+              'excited to meet you!',
+            ],
+            autoStart: true,
+            loop: true,
+          }}
+        />
+      </div>
       <div className='flex gap-5 align-center justify-evenly'>
         <a href='https://github.com/ubcyukiny' target='_blank' className='z-10'>
           <button className='z-10 flex align-center justify-center gap-2'>
