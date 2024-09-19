@@ -11,12 +11,8 @@ const Home = () => {
       <div className='z-10 flex justify-center pb-4'>
         <img src={kenPFP} alt='Ken PFP' className='z-10 rounded-full size-16' />
       </div>
-      <p className='z-10'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga beatae
-        laudantium quasi excepturi fugiat minima cupiditate? Corrupti, culpa,
-        qui consequatur quam accusantium voluptatem omnis, rerum ex veniam
-        quaerat adipisci soluta.
-      </p>
+      <span className=' z-10 first-text'>Hello, I am</span>
+      <span className='z-10 caret text-cyan-300'>Ken Yu</span>
       <div className='flex gap-5 align-center justify-evenly'>
         <a href='https://github.com/ubcyukiny' target='_blank' className='z-10'>
           <button className='z-10 flex align-center justify-center gap-2'>

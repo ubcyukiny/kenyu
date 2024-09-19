@@ -18,4 +18,12 @@
   .body {
     @apply font-medium text-[1.125rem] leading-[1.75rem];
   }
+
+  .skill-icon {
+    @apply size-20;
+  }
+
+  .skill-item {
+    @apply flex flex-col items-center;
+  }
 }

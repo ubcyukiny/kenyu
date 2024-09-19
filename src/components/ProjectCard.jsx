@@ -5,11 +5,11 @@ import jsIcon from '/assets/images/js-svgrepo-com.svg';
 import htmlIcon from '/assets/images/html-5-svgrepo-com.svg';
 import cssIcon from '/assets/images/css-svgrepo-com.svg';
 import d3Icon from '/assets/images/d3.svg';
-import reactIcon from '/assets/images/react-svgrepo-com.svg';
+import reactIcon from '/assets/images/react.svg';
 
 const ProjectCard = () => {
   return (
-    <div className='flex flex-col gap-2 bg-slate-800 rounded-md p-4 hover:bg-slate-600'>
+    <div className='flex flex-col gap-2 bg-slate-800 rounded-md p-4 hover:bg-slate-700'>
       <h3>Project Name</h3>
       <div className='flex flex-row gap-1'>
         <p>Made with: </p>
